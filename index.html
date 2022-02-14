@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charser="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device=width, initual-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<!--font-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+ <!--icons-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+font-awesome/5.15.3/css/all.min.css">
+   
+
+  <title>Responsive Resume CV da Viviane </title>
+<style>
+:root{
+     --baseColor:#f5f5f5;
+     --backgroundColor:#fff;
+     --fontColor:#1f1f1f;
+     --lineColor:#818181;
+     --greyColor:#e5e5e5;
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  outline: none;
+  font-family: "Arial", sans-serif;
+ }
+
+body{
+  background: var(--baseColor);
+  width:100%;
+  height:auto;
+  color:var(--fontColor);
+}
+
+h3{
+ text-transform:uppercase;
+ line-height: 2;
+ letter-spacing: 2;
+ font-size: 17px;
+}
+
+h4{
+ font-size:15px;
+ text-align:left;
+ }
+
+p{
+  font-size:14px;
+}
+
+.resume {
+    max-width:950px;
+    margin: 2rem auto;
+    background: var(--backgroundColor);
+    padding:2rem 1rem;
+    box-shadow:rgba(99,99,99,0.2) 0px 2px 8px 0px;
+}
+
+.header{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+ }
+
+
+
+.header-name{
+ letter-spacing:2;
+ text-transform: uppercase;
+ padding-top:0.5rem;
+ text-align: center;
+}
+
+.header-job{
+ letter-spacing: 1;
+ padding-bottom: 0.5rem;
+ }
+
+.header-contact{
+ width: 80%;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+ padding: 0.5rem 0;
+ font-size: 14px;
+ justify-content: space-around;
+}
+
+.divider {
+  margin: 1rem 2rem;
+  width:100%;
+  border: 1px solid var(--lineColor);
+  background-color: var(--lineColor);
+}
+
+ .body-resume {
+   width:100%;
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+ }
+
+ .left-resume {
+   padding: 0 0.5rem;
+   text-align: right;
+   border-right:2px solid var(--lineColor);
+  }
+
+  .right-resume {
+   padding: 0 1rem;
+   text-align:left;
+  }
+
+
+  .card-resume{
+    padding:0.5rem 1rem;
+  }
+  
+  .detail{
+    padding:0.5rem 0;
+   }
+
+  .subdetail{
+    padding:0.5 0;
+   text-align:left;
+  }
+
+  .subdetail2{
+  padding:0.5 0;
+   text-align:left;
+  }
+.geek1 {
+          list-style-type: square;
+         padding:0.5 0;
+         font-size:13px;
+         text-align:left;
+          
+        }
+
+
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    align-items: center;
+     
+  }
+   
+  .skills-bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 15px;
+    background: var(--greyColor);
+    position: relative;
+  
+  }
+
+  .skills-fill{
+    height: 20px;
+    background: var(--lineColor);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+   }
+
+
+  .html {
+    width: 80%;
+  
+   }
+
+  .css {
+    width: 40%;
+   }
+
+  .javascript{
+    width: 25%;
+   }
+  
+  .excel{
+    width: 35%;
+   }
+
+  .office básico {
+    width: 45%;
+  }
+
+  .awards {
+    display: flex;
+    justify-content: space-between;
+   }
+
+  .hobbies {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+
+  .hobbies>img {
+     width: 50px;
+     height: 50px;
+     margin: 5px 0;
+     padding: 5px;
+     object-fit: contain;
+     border: 1px solid var(--greyColor);
+     border-radius: 10px;
+  }
+
+  @media screen and (max-width:630px) {
+    .left-resume {
+       border-right:none;
+       text-align: left;
+     }
+   }
+
+
+
+
+
+</style>
+  </head>
+  <body>
+     <section class="resume">
+     <!-- header -->
+      <div class="header">
+          <h1 class="header-name">Viviane Moreira da Silva</h1>
+         <h4 class="header-job">Tecnologia de informática ou Estágio na área de Front-end</h4>
+         <div class="header-contact">
+              <a><i class="fas fa-mobile-alt"></i> (11) 99340-8252</a>
+              <a><i class="fas fa-envelope"></i>  vividasilva83@gmail.com</a>
+           
+              <a><i class="fas fa-laptop-code"></i>  www.website.com</a>
+              <a><i class="fas fa-laptop-code"></i>  www.website.com</a>
+             <p> <i class="fas fa-map-marker-alt"></i> Rua das Usinas, 646 - Casa 01 - Vila Penteado - São Paulo|SP - CEP:02867-090 - Brasil </p>
+              <p> 39 anos - Brasileira - Solteira    </p>
+          </div>
+          <hr class="divider">
+         </div>
+         <div class="body-resume">
+        <!---Left side -->
+         <div class="left-resume">
+             <!--profile-->
+           <div class="card-resume">
+                <h3>Perfil</h3>
+                <div class="detail profile">
+                   <p> Sou proativo, gosto de inovar e acredito que os conhecimentos adquiridos e sede de aprender sempre novas habilidades.</p> 
+                 </div>
+            </div>
+
+           <!--experiência -->
+           <div class="card-resume">
+               <h3>Experiência</h3>
+             
+                      <div class="detail experience">
+                 
+                     <p class="subdetail"><b> 2005 a 2011</strong> - Congragação de Santa Cruz </b></p>
+                       <h4>Operador de computador (inclusive microcomputador)</h4>
+                     <ul class="geek1">
+                     <li>Backup(cópia de segurança) entre os computadores;</li>
+                     <li>Conferi os computadores estão ligados;</li>
+                       <li>Digitei "cmd" e "ipconfig" isso só para identificar o endereço de IP (protocolo da internet que identifica, 
+                      localiza e estabelece conexão entre computadores ligados à Internet) de cada estação na rede;</li>  
+                      <li>Organizei das fitas de backup cada os funcionários;</li>
+                      <li> Organizei dos livros de ordem de alfabética e numerica.</li>
+                   </ul>
+                    
+                 </div>
+
+              </div>
+          
+              <!--skills-->
+              <div class="card-resume">
+                   <h3>Habilidades</h3>
+                   <div class="detail skills">
+                       <h4>HTML</h4>
+                       <div class="skills-bar">
+                           <span class="skills-fill adobe" style="width:80%"><span> 80%</span></span>
+                       </div>
+                    </div>
+
+                    <div class="detail skills">
+                       <h4>CSS</h4>
+                       <div class="skills-bar">
+                           <span class="skills-fill journey" style="width:40%"><span> 40%</span></span>
+                       </div>
+                    </div>
+                    
+                    <div class="detail skills">
+                       <h4>JavaScript</h4>
+                       <div class="skills-bar">
+                           <span class="skills-fill programming" style="width:25%"><span> 25%</span></span>
+                       </div>
+                    </div>
+
+                    <div class="detail skills">
+                       <h4>Excel </h4>
+                       <div class="skills-bar">
+                           <span class="skills-fill figma"  style="width:35%"><span> 35%</span></span>
+                       </div>
+                    </div>
+
+                   <div class="detail skills">
+                       <h4>Pacote Office Básico</h4>
+                       <div class="skills-bar">
+                           <span class="skills-fill wireframe" style="width:45%"><span> 45%</span></span>
+                       </div>
+                    </div>
+              </div>
+
+
+           </div>
+          
+           <!-- right side -->
+           <div class="right-resume">
+                <!-- educação -->
+                <div class="card-resume">
+                   <h3>Educação</h3>
+                   <div class="detail education">
+                      <h4>Graduação em Ciência da Computação</4>
+                      <p class="subdetail2"> Universidade de Paulista - UNIP | 2014 - atualmente</p>
+                    </p>
+                   </div>
+                   <div class="detail education">
+                      <h4>Graduação em Matemática</4>
+                      <p class="subdetail2"> Centro Universitário Sant`Anna - UNISANT`ANNA | 2005 a 2009</p>
+                     
+                   </div>
+                 </div>  
+               
+                        <!-- references -->
+                 <div class="card-resume">
+                    <h3>Certificados</h3>
+
+                         
+
+                     <div class="detail references">
+                         <h4>Curso de criação de Sites com HTML5 e CSS </h4>
+                         <p>Prefeitura Municipal de Suzano, através do SASPE - Serviço de Ação Social e Projetos Especiais - Web sem Barreiras | São Paulo - SP</p>
+                            <p><strong>  08/2018 a 12/2018 </strong> </p>
+                     </div>
+
+                      <div class="detail references">
+                         <h4>Curso de gestão de Materias com software de ERP</h4>
+                         <p>IOS - Instituto da Oportunidade SOcial | São Paulo -SP </p>
+                     </div>
+
+                      <div class="detail references">
+                          <h4>Curso de Web Developer</h4>
+                          <p>Evolutime Tecnologia Micro Lapa Ed. Cult.Ltda -São Paulo -SP</p>
+                          <p><strong>08/2013 a 08/2015</strong></p>
+                     </div>
+
+                       <div class="detail references">
+                           <h4>Curso de Excel com Matemática - Básico</h4>
+                            <p>Faculdade Imapcta Tecnologia | São Paulo -SP</p>
+                             <p><strong> 04/2012 a 04/2012 </strong></p>
+                       </div>
+                      
+
+                         <div class="detail references">
+                           <h4>Curso de web Designer </h4>
+                            <p>Senac Consolação | São Paulo - SP</p>
+                            <p><strong> 05/2011 a 12/2012</strong></p>
+                       </div>
+
+                  </div>
+    
+                    <!--skills-->
+              <div class="card-resume">
+                   <h3>lingugagens </h3>
+                   <div class="detail skills">
+                       <h4>Inglês - básico</h4>
+                       <div class="skills-bar">
+                           <span class="skills-fill adobe" style="width:45%"><span>  45 %  </span> </span>
+                       </div>
+                    </div>
+
+                    <div class="detail skills">
+                       <h4>Espanhol -básico </h4>
+                       <div class="skills-bar">
+                           <span class="skills-fill journey" style="width:25%"><span> 25% </span></span>
+                       </div>
+                    </div>
+                    
+                    <div class="detail skills">
+                       <h4>Libra - Brasileira </h4>
+                       <div class="skills-bar">
+                           <span class="skills-fill programming" style="width:75%"><span> 75%</span></span>
+                       </div>
+                    </div>
+
+      
+           </div>    
+
+
+                  
+ 
+
+                <!-- hobbies -->
+                 <div class="card-resume">
+                     <h3>Hobbies</h3>
+                     <div class="detail hobbies">
+                         <img src="images/praia.png" > 
+                          <img src="images/filme.jpg"> 
+                         <img src="images/programming.png">
+                         <img src="images/bike1.png">
+                         <img src="images/studying.png">
+                     </div>
+                 </div>
+            </div>
+       </div>
+       </section>
+  </body>
+  </html>
